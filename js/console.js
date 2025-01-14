@@ -6,6 +6,11 @@ function createtime1() {
     var days = (now1 - grt) / 1000 / 60 / 60 / 24;
     var dnum = Math.floor(days);
 
+    // 获取当前年份动态生成年份范围
+    var currentYear = new Date().getFullYear();
+    var startYear = 2023; // 起始年份
+    var yearRange = `©${startYear} - ${currentYear} By uf4te`;
+    
     var ascll = [
         `欢迎光临 坠入星野的月🌙 的控制台!`,
         `🎉🎉🎉`,
@@ -25,7 +30,7 @@ function createtime1() {
 不知不觉间，小站已经苟活`,
         dnum,
         `天啦!`,
-        `©2023 - 2024 By uf4te`,
+        yearRange, // 使用动态生成的年份范围
     ];
 
     setTimeout(
